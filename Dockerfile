@@ -22,6 +22,8 @@ RUN useradd -ms /bin/bash user \
     && chown -R user /apps
 USER user
 
+ENV LASER=/apps/LASER
+
 EXPOSE 80
 
 CMD ["python", "-m", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]

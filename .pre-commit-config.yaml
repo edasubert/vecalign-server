@@ -3,3 +3,8 @@ repos:
     rev: 21.4b2
     hooks:
     -   id: black
+-   repo: https://gitlab.com/PyCQA/flake8
+    rev: 3.9.1
+    hooks:
+    -   id: flake8
+        args: [--max-line-length=120]
