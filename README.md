@@ -13,5 +13,8 @@ docker run -p80:80 eduardsubert/vecalign-server:latest
 ```
 
 ## Request
-Send POST requests to `http://localhost/`.
+There are two endpoints available: 
+* `http://localhost/align_text` intended for tinkering and testing; pure text interface; discards files after every run
+* `http://localhost/align_files_in_place` intended for processing; requires mounted volume with files; preserves files
+
 Documentation is available at `http://localhost/docs` (the server needs to be running).
